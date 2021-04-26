@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <PreferenceCategory android:title="@string/inline_preferences">
+        <CheckBoxPreference
+            android:key="checkbox_preference"
+            android:summary="@string/summary_checkbox_preference"
+            android:title="@string/title_checkbox_preference" />
+        <SwitchPreference
+            android:key="switch_preference"
+            android:summary="@string/summary_light_switch"
+            android:title="@string/light_switch" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/dialog_based_preferences">
+        <MultiSelectListPreference
+            android:dialogTitle= "@string/dialog_title_list_preference"
+            android:entries="@array/entries_list_preference"
+            android:entryValues="@array/entryvalues_list_preference"
+            android:key="multilist_preference"
+            android:summary="@string/summary_list_preference"
+            android:title="@string/title_multilist_preference" />
+
+        <EditTextPreference
+            android:dialogTitle="@string/dialog_title_edittext_preference"
+            android:key="edittext_preference"
+            android:summary="@string/summary_edittext_preference"
+            android:title="@string/title_edittext_preference" />
+
+        <ListPreference
+            android:dialogTitle="@string/dialog_title_list_preference"
+            android:entries="@array/entries_list_preference"
+            android:entryValues="@array/entryvalues_list_preference"
+            android:key="list_preference"
+            android:summary="@string/summary_list_preference"
+            android:title="@string/title_list_preference" />
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/preference_attributes">
+
+        <CheckBoxPreference
+            android:key="parent_checkbox_preference"
+            android:summary="@string/summary_parent_preference"
+            android:title="@string/title_parent_preference" />
+        <CheckBoxPreference
+            android:dependency="parent_checkbox_preference"
+            android:key="child_checkbox_preference"
+            android:layout="?android:attr/preferenceLayoutChild"
+            android:summary="@string/summary_child_preference"
+            android:title="@string/title_child_preference" />
+    </PreferenceCategory>
+</PreferenceScreen>
