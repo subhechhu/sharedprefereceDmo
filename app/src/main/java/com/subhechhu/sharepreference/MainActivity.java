@@ -17,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // This is my changes in MA
+
         EditText editText_name = findViewById(R.id.editTextTextPersonName);
         findViewById(R.id.button_save).setOnClickListener(view -> {
             if (editText_name.getText().toString().isEmpty()) {
