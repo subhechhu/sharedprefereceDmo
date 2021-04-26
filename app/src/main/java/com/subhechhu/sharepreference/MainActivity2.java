@@ -20,6 +20,9 @@ public class MainActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
+
+        //alish
+
 //        SharedPreferences sharedpreferences = getSharedPreferences("MyPREFERENCES", Context.MODE_PRIVATE); // Sharedpreference value can be read from anywhere in the app when you give the same name of the preference
 //        String name = sharedpreferences.getString("name", "defaultName"); // use same key to get the value which you used during saving
 //        Toast.makeText(MainActivity2.this, name, Toast.LENGTH_SHORT).show();
