@@ -22,6 +22,7 @@ public class MainActivity2 extends AppCompatActivity {
 
 
         //alish
+        //shubhechhu
 
 //        SharedPreferences sharedpreferences = getSharedPreferences("MyPREFERENCES", Context.MODE_PRIVATE); // Sharedpreference value can be read from anywhere in the app when you give the same name of the preference
 //        String name = sharedpreferences.getString("name", "defaultName"); // use same key to get the value which you used during saving
